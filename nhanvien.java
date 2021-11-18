@@ -6,17 +6,19 @@ public class NhanVien {
     private String maNV,hoTen,diaChi,sdt;
     private int luongCB;
     private boolean caLam;
+    private boolean vaiTro;
 
     public NhanVien() {
     }
 
-    public NhanVien(String maNV, String hoTen, String diaChi, String sdt, int luongCB, boolean caLam) {
+    public NhanVien(String maNV, String hoTen, String diaChi, String sdt, int luongCB, boolean caLam, boolean vaiTro) {
         this.maNV = maNV;
         this.hoTen = hoTen;
         this.diaChi = diaChi;
         this.sdt = sdt;
         this.luongCB = luongCB;
         this.caLam = caLam;
+        this.vaiTro = vaiTro;
     }
 
     public String getMaNV() {
@@ -67,9 +69,22 @@ public class NhanVien {
         this.caLam = caLam;
     }
 
+    public boolean isVaiTro() {
+        return vaiTro;
+    }
+
+    public void setVaiTro(boolean vaiTro) {
+        this.vaiTro = vaiTro;
+    }
+
     @Override
     public String toString() {
-        return "NhanVien{" + "maNV=" + maNV + ", hoTen=" + hoTen + ", diaChi=" + diaChi + ", sdt=" + sdt + ", luongCB=" + luongCB + ", caLam=" + caLam + '}';
+        return "NhanVien{" + "maNV=" + maNV + ", hoTen=" + hoTen + ", diaChi=" + diaChi + ", sdt=" + sdt + ", luongCB=" + luongCB + ", caLam=" + caLam + ", vaiTro=" + vaiTro + '}';
     }
     
+
+   
+    
 }
+
+
