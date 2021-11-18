@@ -17,5 +17,5 @@ public abstract class LandCoffeeDAO<EntityType,KeyType> {
     public abstract void delete(KeyType id);
     public abstract List<EntityType> selectAll();
     public abstract EntityType selectById(KeyType id);
-    public abstract List<EntityType> selectBySql(String sql, Object...args);
+    protected abstract List<EntityType> selectBySql(String sql, Object...args);
 }
